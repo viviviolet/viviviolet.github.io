@@ -23,9 +23,33 @@ section {
 }
 
 #navigation {
-  width: 300px;
+  width: 20%;
 }
 
 #content {
-  width: 1000px;
+  width: 80%;
+}
+
+#wrapper {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 975px;
+}
+
+#photos {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 520px;
+}
+
+#photos::-webkit-scrollbar {
+  display: none;
+}
+
+#photos > img {
+  margin: 10px;
+  max-height: 490px;
+  display: inline-block;
 }
